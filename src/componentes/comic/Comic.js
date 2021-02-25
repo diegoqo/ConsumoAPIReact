@@ -44,7 +44,7 @@ export const Comic = () => {
                     day: value['day']
                 });
                 setCargando(false);
-            })
+            }).catch(reason => console.log('Ocurrió un error consultando el comic: ' + reason))
     }, []);
     console.log(comic);
     return (
